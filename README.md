@@ -12,32 +12,37 @@ Checks input and tells whether entered words and phrases are anagrams, palindrom
 
 ## Setup/Installation Requirements
 
-* Visit https://github.com/klotsa/pizza
+* Visit https://github.com/klotsa/anagrams
 * Clone from github
 * Install Sinatra and  Ruby
 * Open via command line
 
-#Specifications
+## Specifications
 Anagram:
-example input:
-example output:
+example input: ruby, bury
+example output: These are anagrams
 
 Palindrome
-example input:
-example output:
+example input: racefastsafecar, Race fast safe car!
+example output: These are also palindromes!
 
 Antigrams
-example input:
+example input: Hi, Bye
 example output:
 
 Not a word
-example input:
-example output:
+example input: 123, zzz
+example output: Enter a real word
+
+Not anagrams:
+example input: dod, not
+example output: These are not anagrams
+
 
 
 ## Known Bugs
 
-_Currently does not work_
+
 
 ## Support and contact details
 
