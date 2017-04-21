@@ -6,8 +6,9 @@ also_reload('lib/**/*.rb')
 get('/') do
   erb(:index)
 end
+ 
 
-get('/anagram') do
-  @anagram = params.fetch('anagrams1').anagrams(params.fetch('anagrams2'))
-  erb(:anagram)
+  get('/anagrams') do
+  @anagram = (params.fetch('anagrams1')).anagrams(params.fetch('anagrams2'))
+  erb(:anagrams)
 end

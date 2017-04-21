@@ -18,20 +18,19 @@ class String
         if input1_formated.chars.sort == input2_formated.chars.sort
           #4 palindrom check
           if input2_formated == input1_reversed
-             "These are also palindromes!"
+             return "These are also palindromes!"
           else #4 end
-             "These are anagrams"
+             return "These are anagrams"
           end
           else #3 end
-             "These are not anagrams"
+             return "These are not anagrams"
           end
         else  #2 end
-           "These words have no letter matches and are antigrams."
+           return "These words have no letter matches and are antigrams."
         end
       else #1 end
-         "Enter a real word"
+         return "Enter a real word"
     end
-
   end
 end
 
