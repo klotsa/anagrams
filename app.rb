@@ -7,7 +7,7 @@ get('/') do
   erb(:index)
 end
 
-get('/title') do
-  @title = (params.fetch('title1')).rps()
-  erb(:title)
+get('/result') do
+  @display = params.fetch('result').anagrams()
+  erb(:result)
 end
