@@ -2,8 +2,8 @@
 # anagram2 = "Old West Action"
 
 class String
-  define_method (:anagrams) do |anagrams1, anagrams2|
-    input1_formated =  anagrams1.downcase.gsub(/[^a-z0-9]/i, '')
+  define_method (:anagrams) do |anagrams2|
+    input1_formated =  self.downcase.gsub(/[^a-z0-9]/i, '')
     input1_array = input1_formated.split("")
     input2_formated =  anagrams2.downcase.gsub(/[^a-z0-9]/i, '')
     input2_array = input2_formated.split("")
@@ -18,7 +18,7 @@ class String
         if input1_formated.chars.sort == input2_formated.chars.sort
           #4 palindrom check
           if input2_formated == input1_reversed
-             "But these are also palindromes!"
+             "These are also palindromes!"
           else #4 end
              "These are anagrams"
           end
@@ -29,7 +29,7 @@ class String
            "These words have no letter matches and are antigrams."
         end
       else #1 end
-         "Don't be lazy. Enter a real word"
+         "Enter a real word"
     end
 
   end

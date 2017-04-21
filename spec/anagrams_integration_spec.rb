@@ -7,9 +7,9 @@ set(:show_exceptions, false)
 describe('String#anagrams', {:type => :feature}) do
   it('processes the user entry and confirms if the word(s) are anagrams') do
     visit('/')
-    fill_in('anagrams1', :with => 'Astronomer')
-    fill_in('anagrams2', :with => 'Moon starrer')
+    fill_in('anagrams1', :with => 'bob')
+    fill_in('anagrams2', :with => 'john')
     click_button('Send')
-    expect(page).to have_content('These are anagrams')
+    expect(page).to have_content('These are not anagrams')
   end
 end
